@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+    <headear id="cabecera">
+        <title>Hoja de vida | Contacto</title>
+        <link rel="stylesheet" href="css/estilos.css">
+            <nav>
+                <ul id="barra">
+                    <li class="acceso"><a href="index.html">Inicio</a></li>
+                    <li class="acceso"><a href="acerca.html">Acerca de mi</a></li>
+                    <li class="acceso"><a href="servicios.html">Servicios</a></li>
+                    <li class="acceso"><a href="potafolio.html">Portafolio</a></li>
+                    <li class="acceso"><a href="contacto.html">Contacto</a></li>
+                </ul>
+              </nav>
+    </headear>
+    <body>
+        <div class="contenido">
+            <form name="formulario">
+                <table>
+                    <tr class="franja">
+                        <td class="titulo2" colspan="2">CONTACTO</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Los campos marcados por <strong>(*)</strong> son obligatorios</td>
+                    <tr>
+                        <td class="entrada">
+                            <label for="nombre" class="lbl"><strong>Nombre *</strong></label>
+                        </td>
+                        <td>
+                            <input type="text" name="nombre" id="nombre" title="Nombre">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="entrada">
+                            <label for="servicio" class="lbl"><strong>Interesado en cuál servicio? *</strong></label>
+                        </td>
+                        <td>
+                            <select name="servicio" id="servicio">
+                                <option value="Desarrollo Web">Desarrollo Web</option>
+                                <option value="Programación de microcontroladores">Programación de microcontroladores</option>
+                                <option value="Desarrollo de software">Desarrollo de software</option>
+                                <option value="Desarrollo de Hardware">Desarrollo de Hardware</option>
+                                <option value="Programación de PLC">Programación de PLC</option>
+                                <option value="Machine Learning">Machine Learning</option>
+                                <option value="Big Data">BigData</option>
+                                <option value="IoT (Internet of things)">IoT (Internet of Things)</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="entrada">
+                            <label for="correo" class="lbl"><strong>Correo *</strong></label>
+                        </td>
+                        <td>
+                            <input type="text" name="correo" id="correo" title="correo@ejemplo.com">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="entrada">
+                            <label for="mensaje" class="lbl"><strong>Mensaje *</strong></label>
+                        </td>
+                        <td>
+                            <textarea type="textarea" name="mensaje" id="mensaje" title="Mensaje"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div id="error"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="submit" value="Enviar" title="Enviar" class="boton" onclick="return validacion();">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            
+        </div>
+        <script src="js/validar.js"></script>
+    </body>
+</html>
